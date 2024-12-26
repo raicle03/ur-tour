@@ -1,21 +1,18 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./index.html",
+    "./myreact/src/**/*.{js,jsx,ts,tsx}", // Scans all files inside the src folder
   ],
   theme: {
     extend: {
       colors: {
-        'custom-dark': '#1A3636',
-        'custom-medium': '#40534C',
-        'custom-light': '#677D6A',
-        'custom-beige': '#E2F1E7',
-      },
-      fontFamily: {
-        buche: ['Buche', 'sans-serif'],
+        'custom-dark': '#1A3636', // A dark green shade
+        'custom-medium': '#40534C', // Another dark green shade
+        'custom-light': '#677D6A', // A light beige shade
+        'custom-soft': '#E0FBE2', // A soft off-white shade
       },
     },
   },
   plugins: [],
-}
-
+};
